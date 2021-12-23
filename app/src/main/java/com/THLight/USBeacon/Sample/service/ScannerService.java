@@ -5,29 +5,18 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
-import android.os.Environment;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
 import com.THLight.USBeacon.App.Lib.BatteryPowerData;
 import com.THLight.USBeacon.App.Lib.iBeaconData;
 import com.THLight.USBeacon.Sample.R;
 import com.THLight.USBeacon.Sample.ui.MainActivity;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import static android.content.ContentValues.TAG;
 
 public class ScannerService extends Service implements DeviceScanManager.iBeaconScanListener {
     private static final String PRIMARY_CHANNEL_ID = "PRIMARY_CHANNEL_ID";
@@ -93,8 +82,10 @@ public class ScannerService extends Service implements DeviceScanManager.iBeacon
     //11.3新增!!!!!!!
     @Override
     public void onScanIBeaconDataResponse(iBeaconData iBeaconData) {
+        MainActivity mainActivity = new MainActivity();
         if (scanResponseListener != null && iBeaconData != null) {
             scanResponseListener.onScanDeviceResponse(iBeaconData);
+            mainActivity.isConnect = true;
         }
     }
 
@@ -115,7 +106,6 @@ public class ScannerService extends Service implements DeviceScanManager.iBeacon
         public void run() {
             super.run();
             while (isScanBoolean) {
-                deviceScanManager.startScanDevice();
                 deviceScanManager.startScanDevice();
                 try {
                     Thread.sleep(1000 * 35); //Stop scan for every 35 seconds.

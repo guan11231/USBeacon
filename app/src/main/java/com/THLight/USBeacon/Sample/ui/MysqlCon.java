@@ -65,28 +65,6 @@ public class MysqlCon {
         return result;
     }
 
-    public boolean checkIfExistId(String id) {    //回傳此學號是否存在
-        boolean result = false;
-        try {
-            Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "SELECT account FROM `userdata` WHERE account = '";
-            sql += id;
-            sql += "'";
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql);
-            if(rs.next()) {
-                result = true;
-                return result;
-            }
-            st.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            Log.e("DB", "寫入資料失敗");
-            Log.e("DB", e.toString());
-        }
-        return result;
-    }
-
     public String getUserName(String id) {  //回傳使用者名稱
         String result = "";
         try {
@@ -120,30 +98,13 @@ public class MysqlCon {
                 st_1.executeUpdate(sql_set_flag_1);
 
                 String sql_set_flag_week_teacher = "UPDATE `" + getClassName() + "` SET " + getWeek_2() + " = '1' WHERE "
-                        + getWeek_2() + " IS NULL AND student_name = '郭教授'";
+                        + getWeek_2() + " IS NULL AND student_name = '張教授'";
                 Statement st_week = con.createStatement();
                 st_week.executeUpdate(sql_set_flag_week_teacher);
 
                 st_0.close();
                 st_1.close();
                 st_week.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                Log.e("DB", "寫入資料失敗");
-                Log.e("DB", e.toString());
-            }
-        }
-    }
-
-    public void setFlag0(String user) {
-        if(getAccount(user).equals("410777000")) {
-            try {
-                Connection con = DriverManager.getConnection(url, db_user, db_password);
-                //設定所有課程flag=0
-                String sql_set_flag_0 = "UPDATE `class` SET flag = '0'";
-                Statement st_0 = con.createStatement();
-                st_0.executeUpdate(sql_set_flag_0);
-                st_0.close();
             } catch (SQLException e) {
                 e.printStackTrace();
                 Log.e("DB", "寫入資料失敗");
@@ -160,7 +121,7 @@ public class MysqlCon {
                 String week1 = "week" + String.valueOf(i);
                 String week2 = "week" + String.valueOf(i + 1);
                 String sql = "SELECT student_name," + week1 + "," + week2 + " FROM `" + getClassName() + "` WHERE " + week1 +
-                        " = '1' AND " + week2 + " IS NULL AND student_name = '郭教授'";
+                        " = '1' AND " + week2 + " IS NULL AND student_name = '張教授'";
                 Statement st = con.createStatement();
                 ResultSet rs = st.executeQuery(sql);
                 if (rs.next()) {
@@ -206,7 +167,7 @@ public class MysqlCon {
                 String week1 = "week" + String.valueOf(i);
                 //String week2 = "week" + String.valueOf(i + 1);
                 String sql = "SELECT student_name," + week1 + " FROM `" + getClassName() + "` WHERE " + week1
-                        + " IS NULL AND student_name = '郭教授'";
+                        + " IS NULL AND student_name = '張教授'";
                 Statement st = con.createStatement();
                 ResultSet rs = st.executeQuery(sql);
                 if (rs.next()) {
@@ -262,7 +223,7 @@ public class MysqlCon {
         String classroom = "";
         try {
             Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "SELECT classroom FROM `class` WHERE flag = '1'";
+            String sql = "SELECT classroom FROM `class` WHERE flag = 1";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()) {
@@ -587,28 +548,6 @@ public class MysqlCon {
                         + "," + week6 + "," + week7 + "," + week8 + "," + week9 + "," + week10 + "," + week11 + "," + week12
                         + "," + week13 + "," + week14 + "," + week15 + "," + week16 + "," + week17 + "," + week18 + "," + week19
                         + "," + week20);
-            }
-
-            st.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return temp;
-    }
-
-    public ArrayList<String> getData_className() {
-        ArrayList<String> temp = new ArrayList<String>();
-
-        try {
-            Connection con = DriverManager.getConnection(url, db_user, db_password);
-            String sql = "SELECT className FROM class";
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql);
-
-            while (rs.next())
-            {
-                String className = rs.getString("className");
-                temp.add(className);
             }
 
             st.close();
