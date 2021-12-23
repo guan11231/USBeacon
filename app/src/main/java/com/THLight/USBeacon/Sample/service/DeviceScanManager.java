@@ -22,7 +22,7 @@ import java.util.List;
 
 public class DeviceScanManager extends ScanCallback {
     private BluetoothAdapter bluetoothAdapter = null;
-    public iBeaconScanListener iBeaconScanListener;
+    private iBeaconScanListener iBeaconScanListener;
 
     DeviceScanManager(Context context, iBeaconScanListener IScan) {
         this.iBeaconScanListener = IScan;

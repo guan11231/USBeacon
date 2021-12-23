@@ -1,9 +1,8 @@
 package com.THLight.USBeacon.Sample.ui.recyclerview;
 
-import androidx.recyclerview.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.THLight.USBeacon.Sample.R;
 import com.THLight.USBeacon.Sample.entity.ScanDeviceItemEntity;
@@ -68,5 +67,4 @@ public class ScanDeviceViewType implements RecyclerViewAdapter.ViewTypeInterface
             macAddressTextView = itemView.findViewById(R.id.macAddressTextView);
         }
     }
-
 }

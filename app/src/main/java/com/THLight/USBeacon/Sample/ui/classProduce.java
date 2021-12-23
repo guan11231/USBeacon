@@ -2,6 +2,7 @@ package com.THLight.USBeacon.Sample.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -93,11 +94,12 @@ public class classProduce extends Activity {
                     CheckBox checkBox = new CheckBox(classProduce.this);
                     checkBox.setId(id);
                     checkBox.setText(data.get(i) + id);
+                    checkBox.setTextSize(16);
 
                     LinearLayout.LayoutParams checkParams = new LinearLayout.LayoutParams(
                             LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                     checkParams.setMargins(10, 10, 10, 10);
-                    checkParams.gravity = Gravity.CENTER;
+                    checkParams.gravity = Gravity.LEFT;
 
                     checkBox.setOnCheckedChangeListener(checkBoxPerson);
 
@@ -112,6 +114,7 @@ public class classProduce extends Activity {
                 int btnId = 100;
                 okBtn.setId(btnId);
                 okBtn.setText("確認");
+                okBtn.setTextSize(20);
                 LinearLayout.LayoutParams okBtnParams = new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 okBtnParams.setMargins(10,10,10,10);
@@ -136,22 +139,18 @@ public class classProduce extends Activity {
                     switch (checkedId)
                     {
                         case R.id.radioButton4: //case RadioButtonClassroom1.getId():
-                            System.out.println(308);
                             NameRoomDayTime[1] = "308";
                             break;
 
                         case R.id.radioButton5: //case RadioButtonClassroom2.getId():
-                            System.out.println(309);
                             NameRoomDayTime[1] = "309";
                             break;
 
                         case R.id.radioButton6: //case RadioButtonClassroom3.getId():
-                            System.out.println(310);
                             NameRoomDayTime[1] = "310";
                             break;
 
                         case R.id.radioButton7: //case RadioButtonClassroom4.getId():
-                            System.out.println(311);
                             NameRoomDayTime[1] = "311";
                             break;
                     }
@@ -167,27 +166,22 @@ public class classProduce extends Activity {
                     switch (checkedId)
                     {
                         case R.id.radioButton8: //case RadioButtonClassroom1.getId():
-                            System.out.println("星期一");
                             NameRoomDayTime[2] = "星期一";
                             break;
 
                         case R.id.radioButton9: //case RadioButtonClassroom2.getId():
-                            System.out.println("星期二");
                             NameRoomDayTime[2] = "星期二";
                             break;
 
                         case R.id.radioButton10: //case RadioButtonClassroom3.getId():
-                            System.out.println("星期三");
                             NameRoomDayTime[2] = "星期三";
                             break;
 
                         case R.id.radioButton11: //case RadioButtonClassroom4.getId():
-                            System.out.println("星期四");
                             NameRoomDayTime[2] = "星期四";
                             break;
 
                         case R.id.radioButton12: //case RadioButtonClassroom4.getId():
-                            System.out.println("星期五");
                             NameRoomDayTime[2] = "星期五";
                             break;
                     }
@@ -203,22 +197,18 @@ public class classProduce extends Activity {
                     switch (checkedId)
                     {
                         case R.id.radioButton13: //case RadioButtonClassroom1.getId():
-                            System.out.println("09:10~12:00");
                             NameRoomDayTime[3] = "09:10~12:00";
                             break;
 
                         case R.id.radioButton14: //case RadioButtonClassroom2.getId():
-                            System.out.println("10:10~12:00");
                             NameRoomDayTime[3] = "10:10~12:00";
                             break;
 
                         case R.id.radioButton15: //case RadioButtonClassroom3.getId():
-                            System.out.println("13:30~16:20");
                             NameRoomDayTime[3] = "13:30~16:20";
                             break;
 
                         case R.id.radioButton16: //case RadioButtonClassroom4.getId():
-                            System.out.println("15:30~17:20");
                             NameRoomDayTime[3] = "15:30~17:20";
                             break;
                     }
@@ -233,14 +223,10 @@ public class classProduce extends Activity {
                 { //buttonView 為目前觸發此事件的 CheckBox, isChecked 為此 CheckBox 目前的選取狀態
                     if(isChecked)//等於 buttonView.isChecked()
                     {
-                        Toast.makeText(getApplicationContext(),buttonView.getText()+" 被選取", Toast.LENGTH_LONG).show();
-                        System.out.println(buttonView.getText()+" 被選取");
                         studentTable.add(buttonView.getText());
                     }
                     else
                     {
-                        Toast.makeText(getApplicationContext(),buttonView.getText()+" 被取消", Toast.LENGTH_LONG).show();
-                        System.out.println(buttonView.getText()+" 被取消");
                         studentTable.remove(buttonView.getText());
                     }
                 }
@@ -254,22 +240,43 @@ public class classProduce extends Activity {
             String className = className_text.getText().toString();
             NameRoomDayTime[0] = className;
 
-            for (int i = 0; i < studentTable.size(); i++) {
-                System.out.println(studentTable.get(i));
-            }
-
             new Thread(new Runnable() {
                 @Override
                 public void run() {
                     // 將資料寫入資料庫
                     MysqlCon con = new MysqlCon();
-                    con.insertClassData(NameRoomDayTime[0], NameRoomDayTime[1], NameRoomDayTime[2], NameRoomDayTime[3], studentTable.size(),0);
-                    con.createAttendanceTable(NameRoomDayTime[0]);
-                    con.insertAttendanceTableData(NameRoomDayTime[0], "Teacher", "張教授", "099999999");
-                    for (int i = 0; i < studentTable.size(); i++) {
-                        String studentStr = (String)studentTable.get(i);
-                        String[] splitted = studentStr.split(",");
-                        con.insertAttendanceTableData(NameRoomDayTime[0], splitted[0], splitted[1], splitted[2]);
+
+
+                    // 檢查className是否存在
+                    ArrayList<String> temp = new ArrayList<String>();
+                    temp = con.getData_className();
+                    boolean existFlag = false;
+                    for (int i = 0; i < temp.size(); i++) {
+                        if (temp.get(i).equals(className)){
+                            existFlag = true;
+                        }
+                    }
+
+                    if (existFlag){
+                        Looper.prepare();
+                        Toast.makeText(classProduce.this,"簽到表創建失敗:課程名稱重複", Toast.LENGTH_LONG).show();
+                        Looper.loop();
+                    }else if(NameRoomDayTime[1] == null || NameRoomDayTime[2] == null || NameRoomDayTime[3] == null){
+                        Looper.prepare();
+                        Toast.makeText(classProduce.this,"簽到表創建失敗:選項遺漏", Toast.LENGTH_LONG).show();
+                        Looper.loop();
+                    }else{
+                        con.insertClassData(NameRoomDayTime[0], NameRoomDayTime[1], NameRoomDayTime[2], NameRoomDayTime[3], studentTable.size(),0);
+                        con.createAttendanceTable(NameRoomDayTime[0]);
+                        con.insertAttendanceTableData(NameRoomDayTime[0], "410777000", "郭教授", "099999999");
+                        for (int i = 0; i < studentTable.size(); i++) {
+                            String studentStr = (String)studentTable.get(i);
+                            String[] splitted = studentStr.split(",");
+                            con.insertAttendanceTableData(NameRoomDayTime[0], splitted[0], splitted[1], splitted[2]);
+                        }
+                        Looper.prepare();
+                        Toast.makeText(classProduce.this,"簽到表創建成功", Toast.LENGTH_LONG).show();
+                        Looper.loop();
                     }
 
                 }

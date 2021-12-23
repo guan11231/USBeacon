@@ -18,7 +18,7 @@ public class NotificationReceiver extends BroadcastReceiver {
         final String get_user_name = (String) intent.getExtras().getString("user");
         /**接收點擊事件*/
         if(MainActivity.isConnect == false) {
-            Toast.makeText(context, "未偵測到Beacon", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "未偵測到Beacon", Toast.LENGTH_LONG).show();
             NotificationManager manager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
             manager.cancel(1);
         }
@@ -30,15 +30,14 @@ public class NotificationReceiver extends BroadcastReceiver {
                         public void run(){
                             MysqlCon con = new MysqlCon();
                             con.run();
-                            //con.setFlag("computer",get_user_name);
                             con.roll_call(get_user_name);
                         }
                     }).start();
-                    Toast.makeText(context, "您已完成點名!", Toast.LENGTH_SHORT).show();
-                    //System.out.println("完成點名");
+
+                    Toast.makeText(context, "您已完成點名!", Toast.LENGTH_LONG).show();
                     NotificationManager manager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
                     manager.cancel(1);
-                break;
+                    break;
                 /*case "Close":
                     NotificationManager manager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
                     manager.cancel(1);

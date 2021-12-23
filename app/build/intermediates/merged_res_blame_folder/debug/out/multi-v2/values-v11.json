@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\USEB\\PROTYPE\\USBeaconSample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\user\\Desktop\\USBeaconSample\\USBeaconSample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "D:\\USEB\\PROTYPE\\USBeaconSample\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "source": "D:\\user\\Desktop\\USBeaconSample\\USBeaconSample\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",

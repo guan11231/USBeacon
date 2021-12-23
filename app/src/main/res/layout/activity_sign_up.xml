@@ -32,9 +32,9 @@
             android:layout_height="wrap_content"
             android:hint="請輸入學號"
             android:paddingLeft="10dp"
-            android:maxLength="20"
+            android:maxLength="9"
             android:layout_gravity="center"
-            android:inputType="textVisiblePassword"
+            android:inputType="number"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -92,7 +92,8 @@
             android:paddingLeft="10dp"
             android:maxLength="20"
             android:layout_gravity="center"
-            android:inputType="textPassword"
+            android:singleLine="true"
+            android:inputType="text"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -121,7 +122,8 @@
             android:paddingLeft="10dp"
             android:maxLength="20"
             android:layout_gravity="center"
-            android:inputType="textPassword"
+            android:inputType="number"
+            android:singleLine="true"
             android:textSize="30sp"/>
 
     </LinearLayout>

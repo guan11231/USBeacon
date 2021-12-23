@@ -40,9 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--新增-->
-        <activity android:name="com.THLight.USBeacon.Sample.ui.GameActivity9" />
-
         <activity android:name="com.THLight.USBeacon.Sample.ui.login" />
         <activity android:name="com.THLight.USBeacon.Sample.ui.sign_up" />
         <activity android:name="com.THLight.USBeacon.Sample.ui.login_successfully" />
@@ -56,7 +53,6 @@
         <activity android:name="com.THLight.USBeacon.Sample.ui.rollCall" />
         <receiver android:name=".ui.NotificationReceiver" />
         <service android:name=".service.ScannerService" />
-
 
 
     </application>
