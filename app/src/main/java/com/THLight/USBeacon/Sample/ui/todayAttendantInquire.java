@@ -53,10 +53,97 @@ public class todayAttendantInquire extends Activity {
                     record = index;
                     index++;
                 }
-                TextView textview = (TextView) findViewById(R.id.title);
-                TextView textview1 = (TextView) findViewById(R.id.week);
-//                textview.setText("課名：" + inquireClass);
-//                textview1.setText("第 " + (record - 2) + " 週");
+
+
+                //今日簽到標題的textview產生
+                TextView textViewTitle = new TextView(todayAttendantInquire.this);
+                textViewTitle.setText("課名：" + inquireClass);
+                textViewTitle.setPadding(50,50,50,50);
+                textViewTitle.setTextSize(20);
+                textViewTitle.setTypeface(null, Typeface.BOLD);
+                textViewTitle.setGravity(Gravity.CENTER);
+                TableLayout.LayoutParams TextViewTitleParams = new TableLayout.LayoutParams(
+                        TableLayout.LayoutParams.WRAP_CONTENT, TableLayout.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewTitleParams.setMargins(1,0,1,1);
+                textViewTitle.setLayoutParams(TextViewTitleParams);
+                tableLayout.post(new Runnable() {
+                    public void run() {
+                        tableLayout.addView(textViewTitle);
+                    }
+                });
+
+
+                TextView textViewWeek = new TextView(todayAttendantInquire.this);
+                textViewWeek.setText("第 " + (record - 2) + " 週");
+                textViewWeek.setPadding(50,50,50,50);
+                textViewWeek.setTextSize(20);
+                textViewWeek.setTypeface(null, Typeface.BOLD);
+                textViewWeek.setGravity(Gravity.CENTER);
+                TableLayout.LayoutParams TextViewWeekParams = new TableLayout.LayoutParams(
+                        TableLayout.LayoutParams.WRAP_CONTENT, TableLayout.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewWeekParams.setMargins(1,0,1,1);
+                textViewWeek.setLayoutParams(TextViewWeekParams);
+                tableLayout.post(new Runnable() {
+                    public void run() {
+                        tableLayout.addView(textViewWeek);
+                    }
+                });
+
+
+                //列標題生成
+                TableRow tableTitleRow = new TableRow(todayAttendantInquire.this);
+                TextView textViewAccount = new TextView(todayAttendantInquire.this);
+                textViewAccount.setText("學號");
+                textViewAccount.setPadding(50,50,50,50);
+                textViewAccount.setTextSize(20);
+                textViewAccount.setTypeface(null, Typeface.BOLD);
+                textViewAccount.setGravity(Gravity.CENTER);
+                TableRow.LayoutParams TextViewAccountParams = new TableRow.LayoutParams(
+                        TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewAccountParams.setMargins(1,0,1,1);
+                textViewAccount.setLayoutParams(TextViewAccountParams);
+                tableTitleRow.addView(textViewAccount);
+
+                TextView textViewName = new TextView(todayAttendantInquire.this);
+                textViewName.setText("姓名");
+                textViewName.setPadding(50,50,50,50);
+                textViewName.setTextSize(20);
+                textViewName.setTypeface(null, Typeface.BOLD);
+                textViewName.setGravity(Gravity.CENTER);
+                TableRow.LayoutParams TextViewNameParams = new TableRow.LayoutParams(
+                        TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewNameParams.setMargins(1,0,1,1);
+                textViewName.setLayoutParams(TextViewNameParams);
+                tableTitleRow.addView(textViewName);
+
+                TextView textViewPhone = new TextView(todayAttendantInquire.this);
+                textViewPhone.setText("連絡電話");
+                textViewPhone.setPadding(50,50,50,50);
+                textViewPhone.setTextSize(20);
+                textViewPhone.setTypeface(null, Typeface.BOLD);
+                textViewPhone.setGravity(Gravity.CENTER);
+                TableRow.LayoutParams TextViewPhoneParams = new TableRow.LayoutParams(
+                        TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewPhoneParams.setMargins(1,0,1,1);
+                textViewPhone.setLayoutParams(TextViewPhoneParams);
+                tableTitleRow.addView(textViewPhone);
+
+                TextView textViewSituation = new TextView(todayAttendantInquire.this);
+                textViewSituation.setText("簽到狀況");
+                textViewSituation.setPadding(50,50,50,50);
+                textViewSituation.setTextSize(20);
+                textViewSituation.setTypeface(null, Typeface.BOLD);
+                textViewSituation.setGravity(Gravity.CENTER);
+                TableRow.LayoutParams TextViewSituationParams = new TableRow.LayoutParams(
+                        TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT,1.0f);
+                TextViewSituationParams.setMargins(1,0,1,1);
+                textViewSituation.setLayoutParams(TextViewSituationParams);
+                tableTitleRow.addView(textViewSituation);
+                tableLayout.post(new Runnable() {
+                    public void run() {
+                        tableLayout.addView(tableTitleRow);
+                    }
+                });
 
                 int id = 0;
 

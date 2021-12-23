@@ -44,7 +44,7 @@ public class login extends Activity {
                         //        ,password.getText().toString().trim()));
                         if(con.checkIfExistAccount(id,psw)) {
                             Intent intent = new Intent();
-                            if(user.equals("張教授")) {
+                            if(user.equals("郭教授")) {
                                 intent.setClass(login.this, login_teacher.class);
                                 Bundle bundle = new Bundle();
                                 bundle.putString("user", user);
@@ -62,8 +62,6 @@ public class login extends Activity {
                             layout.post(new Runnable() {
                                 public void run() {
                                     Toast.makeText(getApplicationContext(), "帳號密碼有誤或尚未註冊", Toast.LENGTH_SHORT).show();
-                                    //NotificationManager manager = (NotificationManager) login.this.getSystemService(NOTIFICATION_SERVICE);
-                                    //manager.cancel(1);
                                 }
                             });
                         }
@@ -90,6 +88,7 @@ public class login extends Activity {
         btn_to_MainActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println(MainActivity.isConnect);
                 Intent intent = new Intent();
                 intent.setClass(login.this, MainActivity.class);
                 startActivity(intent);

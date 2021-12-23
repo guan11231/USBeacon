@@ -3,22 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_game9.xml" value="0.25364583333333335" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_login.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_login_successfully.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_login_teacher.xml" value="0.16621376811594202" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_main.xml" value="0.16621376811594202" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/activity_sign_up.xml" value="0.16621376811594202" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/classproduce.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/custom_notification.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/rollcall.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/set_custom_dialog_layout_with_button.xml" value="0.1328125" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/today_attendant_inquire.xml" value="0.17300724637681159" />
-        <entry key="..\:/USEB/PROTYPE/USBeaconSample/app/src/main/res/layout/ui_beacon_data.xml" value="0.17300724637681159" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/activity_login.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/activity_login_successfully.xml" value="0.16388044579533942" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/activity_login_teacher.xml" value="0.16388044579533942" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/activity_main.xml" value="0.16388044579533942" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/activity_sign_up.xml" value="0.16388044579533942" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/adapter_scan_device_item.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/allstudent_attendant.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/attendant.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/attendant_inquire.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/custom_notification.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/rollcall.xml" value="0.16168478260869565" />
+        <entry key="..\:/user/Desktop/USBeaconSample/USBeaconSample/app/src/main/res/layout/today_attendant_inquire.xml" value="0.16388044579533942" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
