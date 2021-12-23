@@ -6,11 +6,12 @@ package com.THLight.USBeacon.Sample.ui;
  * ==============================================================
  */
 
-import java.io.Console;
 import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import android.Manifest;
@@ -18,7 +19,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ComponentName;
@@ -26,22 +26,23 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.PowerManager;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import com.THLight.USBeacon.App.Lib.BatteryPowerData;
@@ -79,8 +80,13 @@ import android.widget.Button;
 import android.widget.RemoteViews;*/
 //-------------------------10/26新增-------------------------------
 
+
+
 public class MainActivity extends Activity implements USBeaconConnection.OnResponse, CustomRecyclerView.CustomRecyclerViewScrollListener {
 
+    //1220
+
+    //1220
     /**
      * this UUID is generate by Server while register a new account.
      */
@@ -112,6 +118,8 @@ public class MainActivity extends Activity implements USBeaconConnection.OnRespo
     private PowerManager.WakeLock serviceWakeLock;
     private String CHANNEL_ID = "Coder";
     public static boolean isConnect = false;
+
+    private String  iDBM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,8 +166,53 @@ public class MainActivity extends Activity implements USBeaconConnection.OnRespo
             serviceWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, ScannerService.class.getName());
             serviceWakeLock.acquire();
         }
-    }
+        /*//-------------------------12/19新增-------------------------------
+        new CountDownTimer(5000, 500) {
 
+            @Override
+            public void onTick(long l) {
+            }
+
+            @Override
+            public void onFinish() {
+                menuActivity();
+            }
+        }.start();
+        //-------------------------12/19新增-------------------------------*/
+        //12/22
+
+        Handler handler=new Handler();
+        Runnable runnable=new Runnable() {
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                //要做的事情
+
+                if(scanDeviceItemEntityList.size() > 0) {
+                    String rssi1 = scanDeviceItemEntityList.get(0).getRssi();
+                    SharedPreferences pref = getSharedPreferences("rssi", MODE_PRIVATE);
+                    pref.edit()
+                            .putString("rssi1", rssi1)
+                            .commit();
+
+                    iDBM = getSharedPreferences("rssi", MODE_PRIVATE)
+                            .getString("rssi1", "");
+                    //Toast.makeText(MainActivity.this, "iDBM = " + iDBM, Toast.LENGTH_SHORT).show();
+                    handler.postDelayed(this, 2000);
+                }
+            }
+        };
+        handler.postDelayed(runnable, 5000);
+
+        //12/22
+
+    }
+    //-------------------------12/19新增-------------------------------
+    private void menuActivity() {
+        startActivity(new Intent(MainActivity.this, login.class));
+        finish();
+    }
+    //-------------------------12/19新增-------------------------------
     //-------------------------10/26新增-------------------------------
 
     //-------------------------10/26新增-------------------------------
@@ -486,7 +539,6 @@ public class MainActivity extends Activity implements USBeaconConnection.OnRespo
         @Override
         public void onScanDeviceResponse(iBeaconData iBeaconData) {
             System.out.println("onScanDeviceResponse");
-            MainActivity.isConnect = true;
             isFirstPage = scanDeviceItemEntityList.size() < 20;
             addOrUpdateIBeaconDataList(iBeaconData);
             if (isFirstPage) {
@@ -557,4 +609,7 @@ public class MainActivity extends Activity implements USBeaconConnection.OnRespo
             scanDeviceItemEntityList.add(entity);
         }
     }
+
+    //12/20
+    //12/20
 }
