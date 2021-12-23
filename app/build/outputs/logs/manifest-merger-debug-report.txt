@@ -1,0 +1,280 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d8fced5e85ea6b204dee4eb20cd07a89\transformed\design-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\user\.gradle\caches\transforms-3\44038b26fc19815ae44b5c00afb58512\transformed\constraint-layout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\140b3353e84ca5c636c59e1e695edb5b\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-3\edf5bc8636101594c8ae6db0b803b841\transformed\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\655cfd1229c312923bd7859f4d03f0d2\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\6e3b1977e2e1587d68376014d613970c\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7b3b4c034b72a813955c4725349ee3a7\transformed\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-3\0263e0649561565660f2647ec43e734b\transformed\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b758ea0978c8ff7c090766a9339566e6\transformed\transition-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\18773cd889385f2b8859ed21e796e4b6\transformed\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\444d48e9e1dd330e3fc1435d268e5ceb\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9aa0b013fe95acca61e4b4734a582fcb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\bc2d55202123cd62fd8851bd40d13df5\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c02ecdb33fa27d263b4ea30b482eea0c\transformed\customview-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3a9d3956a1baf452ea4602169bfede66\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9f71b5d967181b4f44af6d3d85245ff2\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b394fa6ee6375d9f28f53c1d915f890e\transformed\loader-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3dd6c641a2797ed1e1579ff44a804109\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\939e192258493affaff5ba7a1c81ef83\transformed\cardview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c25f206f36d7a571d3d19a8ae5791b4b\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\bc1a5312c7fb33821f1866e17b131f6f\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-3\72c18685bf7df8e744bf8508218d13ac\transformed\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d63ca5ca1a547e6dfafb94de9df436e9\transformed\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-3\33ca5934d14a4b8e5887a8f0873d185b\transformed\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\f7647a296bca86c43de08eb3423231e5\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c1078fa58f5223e317ca156bf542bcbe\transformed\print-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2d7ef7c44d2e0575519970a7ce7ba376\transformed\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-3\48715d5b5f14aa54f2654ae6aff6ed24\transformed\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-3\0a03fd3179d12bd9e1a4489735ecb865\transformed\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2e9107594ff6cd32c5bb243cfd3f7ed2\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:1-60:12
+	package
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:7:5-74
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:7:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:10:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.INTERNET
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:14:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:16:5-95
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:16:22-92
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:17:5-77
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:17:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:18:22-65
+uses-feature#android.hardware.bluetooth_le
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:21:5-23:35
+	android:required
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:23:9-32
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:22:9-53
+application
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:25:5-58:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d8fced5e85ea6b204dee4eb20cd07a89\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d8fced5e85ea6b204dee4eb20cd07a89\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\user\.gradle\caches\transforms-3\44038b26fc19815ae44b5c00afb58512\transformed\constraint-layout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\user\.gradle\caches\transforms-3\44038b26fc19815ae44b5c00afb58512\transformed\constraint-layout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c25f206f36d7a571d3d19a8ae5791b4b\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c25f206f36d7a571d3d19a8ae5791b4b\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:29:9-41
+	android:persistent
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:30:9-34
+	android:icon
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:28:9-45
+	android:allowBackup
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:27:9-35
+	android:theme
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:31:9-40
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:26:9-70
+activity#com.THLight.USBeacon.Sample.ui.MainActivity
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:32:9-42:20
+	android:screenOrientation
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:36:13-49
+	android:label
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:34:13-45
+	android:launchMode
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:33:13-71
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:37:13-41:29
+action#android.intent.action.MAIN
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:40:27-74
+activity#com.THLight.USBeacon.Sample.ui.login
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:43:9-73
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:43:19-70
+activity#com.THLight.USBeacon.Sample.ui.sign_up
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:44:9-75
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:44:19-72
+activity#com.THLight.USBeacon.Sample.ui.login_successfully
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:45:9-86
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:45:19-83
+activity#com.THLight.USBeacon.Sample.ui.login_teacher
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:46:9-81
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:46:19-78
+activity#com.THLight.USBeacon.Sample.ui.todayAttendantInquire
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:47:9-89
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:47:19-86
+activity#com.THLight.USBeacon.Sample.ui.Attendant
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:48:9-77
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:48:19-74
+activity#com.THLight.USBeacon.Sample.ui.Attendant_inquire
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:49:9-85
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:49:19-82
+activity#com.THLight.USBeacon.Sample.ui.classProduce
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:50:9-80
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:50:19-77
+activity#com.THLight.USBeacon.Sample.ui.Attendant_teacher
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:51:9-85
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:51:19-82
+activity#com.THLight.USBeacon.Sample.ui.AllStudent_Attendant
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:52:9-88
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:52:19-85
+activity#com.THLight.USBeacon.Sample.ui.rollCall
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:53:9-76
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:53:19-73
+receiver#com.THLight.USBeacon.Sample.ui.NotificationReceiver
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:54:9-61
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:54:19-58
+service#com.THLight.USBeacon.Sample.service.ScannerService
+ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:55:9-59
+	android:name
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml:55:18-56
+uses-sdk
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d8fced5e85ea6b204dee4eb20cd07a89\transformed\design-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d8fced5e85ea6b204dee4eb20cd07a89\transformed\design-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\user\.gradle\caches\transforms-3\44038b26fc19815ae44b5c00afb58512\transformed\constraint-layout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\user\.gradle\caches\transforms-3\44038b26fc19815ae44b5c00afb58512\transformed\constraint-layout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\140b3353e84ca5c636c59e1e695edb5b\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\140b3353e84ca5c636c59e1e695edb5b\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-3\edf5bc8636101594c8ae6db0b803b841\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\user\.gradle\caches\transforms-3\edf5bc8636101594c8ae6db0b803b841\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\655cfd1229c312923bd7859f4d03f0d2\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\655cfd1229c312923bd7859f4d03f0d2\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\6e3b1977e2e1587d68376014d613970c\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\6e3b1977e2e1587d68376014d613970c\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7b3b4c034b72a813955c4725349ee3a7\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7b3b4c034b72a813955c4725349ee3a7\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-3\0263e0649561565660f2647ec43e734b\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\user\.gradle\caches\transforms-3\0263e0649561565660f2647ec43e734b\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b758ea0978c8ff7c090766a9339566e6\transformed\transition-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b758ea0978c8ff7c090766a9339566e6\transformed\transition-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\18773cd889385f2b8859ed21e796e4b6\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\18773cd889385f2b8859ed21e796e4b6\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\444d48e9e1dd330e3fc1435d268e5ceb\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\444d48e9e1dd330e3fc1435d268e5ceb\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9aa0b013fe95acca61e4b4734a582fcb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9aa0b013fe95acca61e4b4734a582fcb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\bc2d55202123cd62fd8851bd40d13df5\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\bc2d55202123cd62fd8851bd40d13df5\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c02ecdb33fa27d263b4ea30b482eea0c\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c02ecdb33fa27d263b4ea30b482eea0c\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3a9d3956a1baf452ea4602169bfede66\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3a9d3956a1baf452ea4602169bfede66\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9f71b5d967181b4f44af6d3d85245ff2\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\user\.gradle\caches\transforms-3\9f71b5d967181b4f44af6d3d85245ff2\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b394fa6ee6375d9f28f53c1d915f890e\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\user\.gradle\caches\transforms-3\b394fa6ee6375d9f28f53c1d915f890e\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3dd6c641a2797ed1e1579ff44a804109\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\3dd6c641a2797ed1e1579ff44a804109\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-3\7172112ab543536ad4df127264db9ed7\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\939e192258493affaff5ba7a1c81ef83\transformed\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\user\.gradle\caches\transforms-3\939e192258493affaff5ba7a1c81ef83\transformed\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c25f206f36d7a571d3d19a8ae5791b4b\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c25f206f36d7a571d3d19a8ae5791b4b\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\bc1a5312c7fb33821f1866e17b131f6f\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\bc1a5312c7fb33821f1866e17b131f6f\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-3\72c18685bf7df8e744bf8508218d13ac\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\user\.gradle\caches\transforms-3\72c18685bf7df8e744bf8508218d13ac\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d63ca5ca1a547e6dfafb94de9df436e9\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\user\.gradle\caches\transforms-3\d63ca5ca1a547e6dfafb94de9df436e9\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-3\33ca5934d14a4b8e5887a8f0873d185b\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\user\.gradle\caches\transforms-3\33ca5934d14a4b8e5887a8f0873d185b\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\f7647a296bca86c43de08eb3423231e5\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\user\.gradle\caches\transforms-3\f7647a296bca86c43de08eb3423231e5\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c1078fa58f5223e317ca156bf542bcbe\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\user\.gradle\caches\transforms-3\c1078fa58f5223e317ca156bf542bcbe\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2d7ef7c44d2e0575519970a7ce7ba376\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2d7ef7c44d2e0575519970a7ce7ba376\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-3\48715d5b5f14aa54f2654ae6aff6ed24\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\user\.gradle\caches\transforms-3\48715d5b5f14aa54f2654ae6aff6ed24\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-3\0a03fd3179d12bd9e1a4489735ecb865\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\user\.gradle\caches\transforms-3\0a03fd3179d12bd9e1a4489735ecb865\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2e9107594ff6cd32c5bb243cfd3f7ed2\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\user\.gradle\caches\transforms-3\2e9107594ff6cd32c5bb243cfd3f7ed2\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		ADDED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
+		INJECTED from D:\user\Desktop\USBeaconSample\USBeaconSample\app\src\main\AndroidManifest.xml
